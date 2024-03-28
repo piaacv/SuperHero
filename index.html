@@ -1,28 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poké Crud</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poké Crud</title>
 
-    <!-- BOOTSTRAP CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-    <!-- BOOTSTRAP JS-->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP JS-->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <!-- JQUERY -->
+  <!-- JQUERY -->
 
-    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+  <!-- CANVAS JS -->
+  <script defer src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 
-    <!-- CSS PROPIO -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- CSS PROPIO -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <!-- JS PROPIO -->
-    <script defer src="./assets/js/script.js"></script>
+  <!-- JS PROPIO -->
+  <script defer src="./assets/js/script.js"></script>
 </head>
+
 <body>
-    
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+        SuperHero
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="search">
+      <form id="searchSuperHero">
+        <h1>Encuentra tu SuperHero</h1>
+        <p>Ingresa el número del SuperHero a buscar</p>
+        <div>
+          <label for="" class="form-label"></label>
+          <input id="numberSuperHero" />
+        </div>
+        <button class="btn btn-dark my-2" type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section>
+      <div class="card mb-3" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img id="card-img" src="" class="img-fluid rounded-start" alt="" />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="card-title" class="card-title">Card title</h5>
+              <p id="card-info" class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text" id="card-info-1">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </p>
+              <p class="card-text" id="card-info-2">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </p>
+              <p class="card-text" id="card-info-3">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </p>
+              <p class="card-text" id="card-info-4">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </p>
+              <p class="card-text" id="card-info-5">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </p>
+              <p class="card-text" id="card-info-6">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="graphContainer">
+
+    </section>
+  </main>
 </body>
+
 </html>
